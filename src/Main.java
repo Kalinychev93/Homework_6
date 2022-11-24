@@ -65,8 +65,8 @@ public class Main {
         double deposit1 = 29000;
         double revenue1 = 0;
         for (int month1 = 1; month1 <= 12; month1++) {
-            revenue1 = revenue1 + deposit1;
             revenue1 = revenue1 + revenue1 / 100;
+            revenue1 = revenue1 + deposit1;
             String result = String.format("%.2f",revenue1);
             System.out.println("Месяц " + month1 + ", сумма накоплений равна " + result + " рублей.");
         }
